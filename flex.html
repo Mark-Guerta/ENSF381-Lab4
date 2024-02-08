@@ -74,15 +74,16 @@ Description : Flex Layouts.
         .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; width: 100%;}
 		.body { 
 			display: flex;
+			flex-direction: row;
 		}
         .main { 
 			padding: 15px;
-			
 		}
         
         .news-item { padding: 10px; }
         .row { 
 			display: flex;
+			flex-wrap: wrap
 		}
         
 
@@ -102,9 +103,11 @@ Description : Flex Layouts.
         @media screen and (max-width: 768px) {
 			.body { 
 				display: flex;
+				flex-direction: column;
 			}
             .menu ul { 
-				/*I need some CSS codes.*/
+				display:flex;
+				flex-direction: row;
 			 }            
 			 .large { 
 				width: 100%;
@@ -119,8 +122,8 @@ Description : Flex Layouts.
 
         @media screen and (max-width: 480px) {
             .news-item header h1 { font-size: 18px; }
-            .medium, .small { 
-				width: 100%
+            .medium, .small {
+				width: 100%;
 			 }
         }
     </style>
